@@ -1,0 +1,98 @@
+<!--
+    Section: FooterCustom
+-->
+<style>
+  .ers-footer-1 {
+      background-color: grey;
+      background-color: [setting:color_footer_background];
+      padding: 50px 75px;
+  }
+  .ers-footer-1 .footer-header {
+      color: white;
+      color: [setting:color_footer_header_text];
+  }
+  .ers-footer-1 a {
+      color: white;
+      color: [setting:color_footer_nav_item_text];
+  }
+  .ers-footer-1 a:hover {
+      color: white;
+      color: [setting:color_footer_nav_item_text];
+      text-decoration: none;
+  }
+  .ers-footer-1 h3 {
+      margin-top: 15px;
+  }
+  .ers-footer-1 .footer-logo {
+      width: 150px;
+  }
+  .ers-footer-1 .footer-logo > img {
+      width: 150px;
+  }
+  .ers-footer-1 .social-icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 15px;
+  }
+  .ers-footer-1 .footer-nav-item {
+      list-style-type: none;
+      color: grey;
+      color: [setting:color_footer_nav_modal_text];
+  }
+  .ers-footer-1 .footer-address {
+      color: white;
+      color: [setting:color_footer_header_text];
+      margin-bottom: 15px;
+  }
+  .ers-footer-1 .footer-phone {
+      font-size: 24px;
+      color: white;
+      color: [setting:color_footer_phone_text];
+  }
+  .ers-footer-1 .footer-nav-item > .dropdown-menu {
+      top: initial;
+      left: 40%;
+  }
+  </style>
+  <div class="ers-footer-1">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-4">
+                  <a class="footer-logo" href='/'>
+                      [general_image:Logo?&max-height=300&class=main-logo]
+                  </a>
+                  <div class="social-icons">
+                      [social media]
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <h3 class="footer-header header-style">Menu</h3>
+                  <!--NAV START-->
+                      <!--SINGLE START-->
+                      <li class="footer-nav-item"><a href="[LINK]">[TITLE]</a></li>
+                      <!--SINGLE END-->
+                      <!--MULTIPLE START-->
+                      <li class="footer-nav-item">
+                          <a href="[LINK]" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">[TITLE] <span class="caret"></a>
+                          <ul class="dropdown-menu">
+                              <!--SUBNAV START-->
+                              <li class="footer-nav-item"><a href="[LINK]">[TITLE]</a></li>
+                              <!--SUBNAV END-->
+                          </ul>
+                      </li>
+                      <!--MULTIPLE END-->
+                  <!--NAV END-->
+              </div>
+              <div class="col-md-4">
+                  <h3 class="footer-header header-style">Contact Us</h3>
+                  <div class="footer-address">
+                      <p>[setting:company_address]</p>
+                      <p>[setting:company_city], [setting:company_state] [setting:company_zip]</p>
+                  </div>
+                  <a href="tel://[setting:company_phone]" class="footer-phone header-style">[setting:company_phone]</a>
+              </div>
+          </div>
+      </div>
+  </div>
