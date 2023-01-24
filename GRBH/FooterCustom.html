@@ -1,0 +1,71 @@
+<!--
+    Section: FooterCustom
+-->
+<style>
+  .ers-footer-4 {
+      background-color: grey;
+      background-color: [setting:color_footer_background];
+      padding: 75px 0;
+  }
+  .ers-footer-4 a, .ers-footer-4 a:hover {
+      text-decoration: none;
+  }
+  .ers-footer-4 .footer-logo {
+      width: 70px;
+  }
+  .ers-footer-4 .footer-logo > img {
+      width: 70px;
+  }
+  .ers-footer-4 .social-icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 50px;
+  }
+  .ers-footer-4 .social-icons > a {
+      border: solid 3px #fff;
+      border-radius: 100px;
+      padding: 10px;
+      height: 50px;
+      margin: 5px !important;
+  }
+  .ers-footer-4 .social-icons > a > svg > path {
+      fill: [setting:color_footer_social_icons] !important;
+  }
+  .ers-footer-4  .phone-text > a {
+      font-size: 24px;
+      color: white;
+      /*color: [setting:color_footer_phone_text];*/
+  }
+  @media only screen and (min-width: 600px) {
+      .ers-footer-4 .footer-logo {
+          width: 150px;
+      }
+      .ers-footer-4 .footer-logo > img {
+          width: 150px;
+      }
+  }
+  @media only screen and (min-width: 768px) {
+      .ers-footer-4 .social-icons {
+          margin-top: 0px;
+      }
+  }
+  </style>
+  <div class="ers-footer-4">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-xs-6 col-sm-4">
+                  <p class="header-style phone-text"><a href="tel://[setting:company_phone]">Call: [setting:company_phone]</a></p>
+              </div>
+              <div class="col-xs-6 col-sm-4">
+                  <a class="footer-logo" href='/'>
+                      [general_image:Logo?&max-height=300&class=main-logo]
+                  </a>
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                  <div class="social-icons">[social media]</div>
+              </div>
+          </div>
+      </div>
+  </div>
