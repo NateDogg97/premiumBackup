@@ -1,0 +1,1043 @@
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    // Fix button styling in store
+    $('.button_add').addClass('button_book').removeClass('button_add');
+});
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Lilita+One&family=Luckiest+Guy&display=swap" rel="stylesheet">
+<style rel="stylesheet" type="text/css">
+#section_header_nav_container > div.ers-header-3 > div:nth-child(1) > div > div.col-md-4.col-xs-12 > a > img {
+    width: 200px;
+    height: 157px !important;
+    margin-top: -28px;
+}
+/* Fixes styling of category boxes on Category Page and Home page */
+
+.ers_category .panel-default, 
+.ers_page_home .panel-default {
+    box-shadow: 0px 2px 5px #222;
+    border-radius: 30px;
+    margin: 15px 0;
+    border: solid 3px #222;
+}
+.ers_category .panel-title, .ers_page_home .panel-title {
+    font-size: 1.25rem;
+}
+.ers_category .store > .container .row div.col-md-4, 
+.ers_category .store section div[id*='container_'], 
+.ers_page_home .store > .container .row div.col-md-4, 
+.ers_page_home .store section div[id*='container_'] {
+    box-shadow: none;
+}
+
+/* Fixes font-size on sentence below the FAQs on FAQ Page */
+.ers_page_frequently_asked_questions h5.text-center {
+    font-size: 20px;
+}
+/* Fix styling on contact form */
+.form-control {
+    margin-bottom: 10px !important;
+    height: 45px;
+    font-size: 16px;
+}
+body.ers_page_contact_us .btn-primary {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 15px 40px;
+    box-shadow: 0px 2px 5px #222;
+    background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    background-size: 200% 200%;
+    background-color: [setting:color_ordering_button_background];
+}
+body.ers_page_contact_us .btn-primary:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: [setting:color_ordering_button_background];
+    -webkit-animation: Animation .75s ease 1;
+    -moz-animation: Animation .75s ease 1;
+    animation: Animation .75s ease 1;
+}
+
+/* Fix white space gap below footer */
+div[style="text-align: center;"] {
+    margin-top: -6px;
+}
+
+/* Fix button centering on order by date page */
+.ers_page_order-by-date #item_container > div > table > tbody > tr:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+}
+.ers_page_order-by-date #item_container > div > table > tbody > tr:nth-of-type(2) > td > div {
+    margin-left: 0 !important;
+}
+
+/* Fix styles on item pages */
+body[class^="ers_items"] #item_container > div > table > tbody > tr:nth-of-type(2) > td > div {
+    display: flex;
+    justify-content: center;
+}
+body[class^="ers_items"] .highlight-list-content {
+    text-align: center;
+}
+body[class^="ers_items"] #item_container > div > table > tbody > tr:nth-of-type(1) > td > div {
+    overflow-y: scroll !important;
+    padding: 10px;
+}
+
+/* Core Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+.header-style {
+    font-family: 'Luckiest Guy', cursive;
+    color: #fff;
+}
+.header-style-2 {
+    font-family: 'Lilita One', cursive;
+}
+.button-style {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 15px 40px;
+    box-shadow: 0px 2px 5px #222;
+    background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    background-size: 200% 200%;
+}
+.button-style:hover {
+    color: #fff;
+    text-decoration: none;
+    -webkit-animation: Animation .75s ease 1;
+    -moz-animation: Animation .75s ease 1;
+    animation: Animation .75s ease 1;
+}
+.button-style:visited {
+    color: #fff;
+}
+@-webkit-keyframes Animation {
+    0%{background-position:10% 0%}
+    25%{background-position:91% 100%}
+    100%{background-position:0% 10%}
+}
+@-moz-keyframes Animation {
+    0%{background-position:10% 0%}
+    25%{background-position:91% 100%}
+    100%{background-position:0% 10%}
+}
+@keyframes Animation { 
+    0%{background-position:10% 0%}
+    25%{background-position:91% 100%}
+    100%{background-position:0% 10%}
+}
+/* End Core Styles */
+
+#store_form input[type="button"] {
+    height: unset !important;
+    background-color: [setting:color_ordering_button_background];
+}
+#store_form button:hover,
+#store_form input[type="button"]:hover,
+#store_form input[type="submit"]:hover {
+    color: #fff;
+    text-decoration: none;
+    -webkit-animation: Animation .75s ease 1;
+    -moz-animation: Animation .75s ease 1;
+    animation: Animation .75s ease 1;
+}
+.header-button {
+    margin-left: 20px;
+}
+#search_box {
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    div[style="text-align: center;"] {
+        display: flex;
+        flex-direction: column;
+    }
+}
+</style>
+<style type="text/css">
+/*
+* Default Variables from Bootstrap 3.3.6 /scss/_defaults.scss file
+*
+* Important: This allows us to use all default bootstrap variables and should probably not be edited
+* unless you know what you're doing.
+*/
+/*
+* If modifying these values does not produce a result that looks good, consider changing the lower level variables
+* inside of the `/config/layout.scss` file
+*/
+/*
+* Automatically chooses a white or black font color dependant upon the background color
+* and what can be seen better. Not perfect, but works good.
+    */
+/*
+* Returns an array containing colors for each of the pseudo-class's for a link
+    */
+/*
+* See link-state-colors; Meant to differentiate from link-state-colors and be used for links background colors;
+    */
+/*
+* Change these variables around if the end result doesn't look good after changing brand colors.
+* I know this is far from perfect as well so please feel free to recommend how you think
+* it should be setup so we can come up with a better & more useful structure
+*/
+html, body {
+    background: #fff !important;
+    font-size: 16px !important;
+}
+
+html, body {
+    background-image: none !important;
+}
+
+video {
+    width: 100%    !important;
+    height: auto   !important;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    margin: 0 0 15px 0;
+    color: #212529;
+    display: block;
+}
+
+h1, .h1 {
+    color: #212529;
+    font-size: 3rem;
+    margin: 0 0 15px 0;
+}
+
+h2, .h2 {
+    color: #212529;
+    font-size: 2.8rem;
+    margin: 0 0 15px 0;
+}
+
+h3, .h3 {
+    color: #212529;
+    font-size: 2.4rem;
+    margin: 0 0 15px 0;
+}
+
+h4, .h4 {
+    color: #212529;
+    font-size: 2rem;
+    margin: 0 0 15px 0;
+}
+
+h5, .h5 {
+    color: #212529;
+    font-size: 1.8rem;
+    margin: 0 0 15px 0;
+}
+
+h6, .h6 {
+    color: #212529;
+    font-size: 1.5rem;
+    margin: 0 0 15px 0;
+}
+
+ol, ul {
+    list-style-position: inside;
+}
+
+video {
+    width: 100%    !important;
+    height: auto   !important;
+}
+
+p {
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+/*  ERS Resets */
+.col-sm-12[style*="padding-right"][style*="0px"] {
+    padding: 5px 15px !important;
+}
+
+div[style*="max-height"][style*="overflow:auto"] {
+    overflow: visible !important;
+}
+
+.green_asterisk {
+    color: [setting:color_ordering_button_background] !important;
+}
+
+*[autocolor="main"] {
+    background-color: [setting:color_ordering_button_background] !important;
+    opacity: 1 !important;
+}
+
+#item_container.ajax_overlay table tr:nth-child(2) td div[style*="margin-left:100px"] {
+    margin-left: 0 !important;
+}
+
+/* End ERS Resets */
+/*
+* Default Variables from Bootstrap 3.3.6 /scss/_defaults.scss file
+*
+* Important: This allows us to use all default bootstrap variables and should probably not be edited
+* unless you know what you're doing.
+*/
+/*
+* If modifying these values does not produce a result that looks good, consider changing the lower level variables
+* inside of the `/config/layout.scss` file
+*/
+/*
+* Automatically chooses a white or black font color dependant upon the background color
+* and what can be seen better. Not perfect, but works good.
+    */
+/*
+* Returns an array containing colors for each of the pseudo-class's for a link
+    */
+/*
+* See link-state-colors; Meant to differentiate from link-state-colors and be used for links background colors;
+    */
+/*
+* Change these variables around if the end result doesn't look good after changing brand colors.
+* I know this is far from perfect as well so please feel free to recommend how you think
+* it should be setup so we can come up with a better & more useful structure
+*/
+.section-py {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.section-px {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section-primary {
+    background: #fff;
+    color: #212529;
+}
+
+.section-primary a:hover {
+    color: #fff;
+}
+
+.section-primary a:active {
+    color: #222;
+}
+
+.section-primary a:link {
+    color: #000;
+}
+
+.section-primary a:visited {
+    color: #444;
+}
+
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    position: relative;
+    color: #fff;
+    background: #333;
+    border: 1px solid #222;
+    box-shadow: 1px 1px 1px #000;
+}
+
+/*
+* Default Variables from Bootstrap 3.3.6 /scss/_defaults.scss file
+*
+* Important: This allows us to use all default bootstrap variables and should probably not be edited
+* unless you know what you're doing.
+*/
+/*
+* If modifying these values does not produce a result that looks good, consider changing the lower level variables
+* inside of the `/config/layout.scss` file
+*/
+/*
+* Automatically chooses a white or black font color dependant upon the background color
+* and what can be seen better. Not perfect, but works good.
+    */
+/*
+* Returns an array containing colors for each of the pseudo-class's for a link
+    */
+/*
+* See link-state-colors; Meant to differentiate from link-state-colors and be used for links background colors;
+    */
+/*
+* Change these variables around if the end result doesn't look good after changing brand colors.
+* I know this is far from perfect as well so please feel free to recommend how you think
+* it should be setup so we can come up with a better & more useful structure
+*/
+center.ers_footer {
+    padding: 15px;
+    color: #fff;
+    background: #222;
+    border: 1px solid #66b8ff;
+}
+
+center.ers_footer br, .ers_footer > p {
+    display: none !important;
+}
+
+.prm-copyright, .ers_footer > div[style*="center"] {
+    display: inline;
+    text-align: initial !important;
+}
+
+.prm-copyright span,
+.ers_footer span {
+    color: #fff !important;
+}
+
+.copyright a,
+.ers_footer span font {
+    color: #000 !important;
+}
+
+/*
+* Default Variables from Bootstrap 3.3.6 /scss/_defaults.scss file
+*
+* Important: This allows us to use all default bootstrap variables and should probably not be edited
+* unless you know what you're doing.
+*/
+/*
+* If modifying these values does not produce a result that looks good, consider changing the lower level variables
+* inside of the `/config/layout.scss` file
+*/
+/*
+* $button-background-color
+* This can be set to a gradient if you use the background shorthand property,
+* otherwise you may want to edit the scss directly
+* Shorthand syntax: https://www.w3schools.com/cssref/css3_pr_background.asp
+    */
+/*.button,
+.button_book,
+.button_add,
+.button_back,
+.header_change_button,
+.button_finalizeOrder,
+.btn#ers_continue_shopping,
+.btn#ers_translate_clear_order,
+.btn#ers_translate_checkout,
+#cart_container .btn-default {
+    background: #0BB02B !important;
+    border-radius: 5px !important !important;
+    border: none !important;
+    padding: 7px 14px !important;
+    font-size: 0.8rem !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    font-family: "Open Sans", verdana, arial, sans-serif !important;
+    text-transform: capitalize !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4) !important;
+    box-shadow: none !important;
+    margin: 2px !important;
+    outline: none !important;
+}*/
+
+.button,
+.button_book,
+.button_add,
+.button_back,
+.header_change_button,
+.button_finalizeOrder,
+.btn#ers_continue_shopping,
+.btn#ers_translate_clear_order,
+.btn#ers_translate_checkout,
+#cart_container .btn-default {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 15px 40px;
+    box-shadow: 0px 2px 5px #222;
+    background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.4), transparent) !important;
+    background-size: 200% 200% !important;
+    background-color: [setting:color_ordering_button_background];
+}
+
+
+.btn#ers_translate_checkout {
+    background-color: [setting:color_ordering_button_background];
+}
+
+.store .item_price {
+    font-family: 'Luckiest Guy', cursive !important;
+    font-size: 25px !important;
+}
+
+.store .button_book {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 15px 10px 10px 10px;
+    box-shadow: 0px 2px 5px #222;
+    background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.4), transparent) !important;
+    background-size: 200% 200% !important;
+    background-color: [setting:color_ordering_button_background];
+}
+
+.btn#ers_continue_shopping, .btn#ers_translate_clear_order {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 0px 2px 5px #222;
+    background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.4), transparent) !important;
+    background-size: 200% 200% !important;
+    background-color: [setting:color_ordering_button_background];
+}
+
+.store .button_back {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 15px;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 0px 2px 5px #222;
+    background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.4), transparent) !important;
+    background-size: 200% 200% !important;
+    background-color: [setting:color_ordering_button_background];
+}
+
+.store .button_back:hover, .store .button_book:hover, .btn#ers_continue_shopping:hover, .btn#ers_translate_clear_order:hover, .btn#ers_translate_checkout:hover, .btn#ers_continue_shopping:hover {
+    color: #fff;
+    text-decoration: none;
+    -webkit-animation: Animation .75s ease 1;
+    -moz-animation: Animation .75s ease 1;
+    animation: Animation .75s ease 1;
+}
+
+.store [class*=col-xs-12] > table td[valign] > div[style*=float] {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.button_back {
+    padding: 7px 14px !important;
+}
+
+/* Add to calendar button */
+.button_book {
+    width: 230px;
+    max-width: 100%;
+}
+
+.book-now .button_book {
+    width: 100%;
+    max-width: 100%;
+}
+
+.ers_button_silver {
+    background: #e3e3e3 !important;
+    border: 1px solid #AFAFAF !important;
+    border-radius: 5px !important;
+    color: #495057;
+}
+
+.ers_button_default,
+.ers_button_grey,
+.ers_button_silver {
+    padding: 7px 14px;
+    vertical-align: middle;
+}
+
+/*
+* Default Variables from Bootstrap 3.3.6 /scss/_defaults.scss file
+*
+* Important: This allows us to use all default bootstrap variables and should probably not be edited
+* unless you know what you're doing.
+*/
+/*
+* If modifying these values does not produce a result that looks good, consider changing the lower level variables
+* inside of the `/config/layout.scss` file
+*/
+.calendar_div_dayofweek, .calendar_cell_dayofweek {
+    background-color: #08f !important;
+    color: #fff !important;
+    text-align: center !important;
+}
+
+.calendar_div {
+    color: #08f !important;
+}
+
+#calendar_container .button-nexto-text {
+    color: #495057 !important;
+}
+
+.calendar_nextprev {
+    color: #08f !important;
+}
+
+#multidaybtn div[onclick*=multidaybtn] {
+    background-color: #08f !important;
+    color: #fff !important;
+    width: 100% !important;
+    margin-bottom: 0 0 10px 0 !important;
+    border-radius: 5px !important !important;
+}
+
+#multidaybtn div[onclick*=overnight] {
+    background-color: #005299 !important;
+    color: #fff !important;
+    width: 100% !important;
+    margin-bottom: 0 !important;
+    border-radius: 5px !important !important;
+}
+
+/*
+* Default Variables from Bootstrap 3.3.6 /scss/_defaults.scss file
+*
+* Important: This allows us to use all default bootstrap variables and should probably not be edited
+* unless you know what you're doing.
+*/
+/*
+* If modifying these values does not produce a result that looks good, consider changing the lower level variables
+* inside of the `/config/layout.scss` file
+*/
+
+.suggested-addon-text {
+    font-size: 1.2rem !important;
+    line-height: 1.1em !important;
+}
+
+/* Begin: Checkout Forms */
+#formsec1, #formsec2, #formsec3 {
+    border-radius: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#store_form button,
+#store_form select,
+#store_form input[type="email"],
+#store_form input[type="text"],
+#store_form input[type="submit"],
+#store_form input[type="button"] {
+    height: 45px;
+}
+
+#store_form button,
+#store_form select,
+#store_form textarea,
+#store_form input[type="text"],
+#store_form input[type="email"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    border: 1px solid #cccccc;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.5);
+    padding: 2px 15px;
+    border-radius: 5px;
+}
+
+#store_form button,
+#store_form input[type="button"],
+#store_form input[type="submit"] {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 15px 10px 10px 10px;
+    box-shadow: 0px 2px 5px #222;
+    background-image: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.4), transparent) !important;
+    background-size: 200% 200% !important;
+    background-color: [setting:color_ordering_button_background];
+}
+
+#store_form button,
+#store_form input[type="button"],
+#store_form input[type="submit"] {
+    width: 100%;
+}
+
+#store_form textarea {
+    padding: 10px 15px !important;
+}
+
+#store_form table[style*="left"][style*="8px"] {
+    left: 0 !important;
+}
+
+#store_form select[id*="order_options_"], #store_form #other_billing_state {
+    margin-top: 8px;
+}
+
+/* End: Checkout Forms */
+/* Begin: Payment Page */
+#payment_container td[bgcolor] {
+    background-color: #cccccc;
+    color: #777 !important;
+}
+
+/* End: Payment Page */
+@media (min-width: 400px) {
+    .cart_table_container .cart_item_name {
+    font-weight: 600;
+    }
+    .cart_table_container .cart_item_name, .cart_table_container .cart_item_details, .cart_table_container table[width*='100'] td:nth-child(2) font {
+    font-size: 1.2rem !important;
+    line-height: 1.1em !important;
+    }
+}
+
+/*
+* Default Variables from Bootstrap 3.3.6 /scss/_defaults.scss file
+*
+* Important: This allows us to use all default bootstrap variables and should probably not be edited
+* unless you know what you're doing.
+*/
+/*
+* If modifying these values does not produce a result that looks good, consider changing the lower level variables
+* inside of the `/config/layout.scss` file
+*/
+/* Logo Styling */
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 180px;
+    max-height: 80px;
+    margin: -5px 0 0 0;
+}
+
+/* End Logo Styling */
+/*
+* Default Variables from Bootstrap 3.3.6 /scss/_defaults.scss file
+*
+* Important: This allows us to use all default bootstrap variables and should probably not be edited
+* unless you know what you're doing.
+*/
+/*
+* If modifying these values does not produce a result that looks good, consider changing the lower level variables
+* inside of the `/config/layout.scss` file
+*/
+#search_box {
+    margin: 20px 0 !important;
+    border-radius: 5px;
+    border: none;
+    padding-bottom: 0 !important;
+}
+
+#item_search_box {
+    background: #08f;
+    color: #fff !important;
+    border-radius: 0 !important;
+    font-weight: 600;
+    box-shadow: -2px 0 1px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+input#search_items {
+    width: 100%;
+    padding-left: 20px;
+}
+
+#search_box {
+    overflow: hidden;
+}
+
+#search_box > table > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td {
+    display: inline-block;
+    width: 80%;
+}
+
+#search_box > table > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(1) input[type=text] {
+    width: 100%;
+    border: none !important;
+}
+
+#search_box > table > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) {
+    display: inline-block;
+    width: 20%;
+    padding-left: 0 !important;
+}
+
+input#item_search_box {
+    display: block;
+    padding: 8px 18px;
+    font-weight: 600;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#search_box > table > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(1) input[type=text],
+#item_search_box {
+    height: 45px !important;
+    font-size: 1em !important;
+    line-height: 1.1em !important;
+}
+
+#item_search_box {
+    border: none !important;
+}
+
+#search_box > table > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(1) input[type=text] {
+    width: 100%;
+    border: 1px solid #cccccc !important;
+}
+
+#search_box > table > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr {
+    margin-bottom: 1px;
+}
+
+#search_box > table > tbody > tr,
+#search_box > table > tbody > tr > td,
+#search_box > table > tbody > tr > td > table,
+#search_box > table > tbody > tr > td > table > tbody,
+#search_box > table > tbody > tr > td > table > tbody > tr,
+#search_box > table > tbody > tr > td > table > tbody > tr > td:nth-child(2),
+#search_box > table > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table,
+#search_box > table > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody,
+#search_box > table > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr {
+    display: block;
+}
+
+.ers_store_table > tbody > tr > td[align=center]:not(:nth-child(2)),
+.ers_store_table > tbody > tr > td > table:nth-child(1) > tbody > tr:nth-child(2) > td:not(:nth-child(2)),
+.ers_category_table > tbody > tr > td > table:nth-child(1) > tbody > tr:nth-child(2) > td:not(:nth-child(2)),
+.ers_item_table > tbody > tr > td > table:nth-child(1) > tbody > tr:nth-child(2) > td:not(:nth-child(2)),
+#search_box > table > tbody > tr > td > table > tbody > tr > td:not(:nth-child(2)),
+#cart_container > table:nth-child(1) > tbody > tr:nth-child(2) > td:not(:nth-child(2)) {
+    display: none;
+}
+
+#order_header_container > span {
+    display: inline-block;
+    color: #fff;
+    background-color: [setting:color_ordering_button_background];
+    padding: 8px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+div#order_header_container {
+    background: none !important;
+    padding: 0;
+    margin: 5px 5px 0 5px;
+}
+
+div#order_header_container + div {
+    border: 1px solid #cccccc;
+    margin: 0 5px 5px 5px;
+}
+
+#order_header_container input#item_search_box {
+    width: 100%;
+}
+
+#order_header_container .header_search_box {
+    display: none;
+    width: 100%;
+    position: static;
+    margin: 0 !important;
+}
+
+#order_header_container > span {
+    display: inline-block;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    #search_box {
+    margin: 20px 15px !important;
+    }
+    #search_box > table > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td,
+    #search_box > table > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) {
+    width: 100%;
+    }
+    #search_box > table > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) {
+    margin-top: 5px;
+    }
+    #section_header_nav_container > div.ers-header-3 > div:nth-child(1) > div > div.col-md-4.col-xs-12 > a > img {
+    width: 100px;
+    height: 75px !important;
+    margin-top: 0px;
+}
+}
+
+/*
+* Default Variables from Bootstrap 3.3.6 /scss/_defaults.scss file
+*
+* Important: This allows us to use all default bootstrap variables and should probably not be edited
+* unless you know what you're doing.
+*/
+/*
+* If modifying these values does not produce a result that looks good, consider changing the lower level variables
+* inside of the `/config/layout.scss` file
+*/
+/* Social Media Styling */
+.social-media {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.social-media a {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    margin: 0 2px;
+    background: #0BB02B;
+    border-radius: 100%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    color: #fff !important;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+}
+
+/* End Social Media Styling */
+/*
+* Default Variables from Bootstrap 3.3.6 /scss/_defaults.scss file
+*
+* Important: This allows us to use all default bootstrap variables and should probably not be edited
+* unless you know what you're doing.
+*/
+/*
+* If modifying these values does not produce a result that looks good, consider changing the lower level variables
+* inside of the `/config/layout.scss` file
+*/
+.store {
+    background: none !important;
+}
+
+.store > .container .row div.col-md-4,
+.store section div[id*='container_'] {
+    margin: 5px;
+    float: left;
+    width: calc(33.333% - 10px);
+    box-shadow: 0 0 10px 0 rgba(84, 84, 84, 0.35);
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .store > .container .row div.col-md-4,
+    .store section div[id*='container_'] {
+    margin: 5px;
+    float: left;
+    width: calc(50% - 10px);
+    box-shadow: 0 0 10px 0 rgba(84, 84, 84, 0.35);
+    }
+    #section_header_nav_container > div.ers-header-3 > div:nth-child(1) > div > div.col-md-4.col-xs-12 > a > img {
+    width: 100px;
+    height: 75px !important;
+    margin-top: 0px;
+}
+}
+
+@media (max-width: 767px) {
+    .store > .container .row div.col-md-4,
+    .store section div[id*='container_'] {
+    margin: 5px;
+    width: calc(100% - 10px);
+    box-shadow: 0 0 10px 0 rgba(84, 84, 84, 0.35);
+    }
+}
+
+.panel-default {
+    box-shadow: none;
+    border: none !important;
+}
+
+.panel-default > .panel-heading {
+    background-color: transparent !important;
+    border: none;
+}
+
+.panel-group .panel {
+    margin-bottom: 0;
+}
+
+.panel-title {
+    font-family: 'Luckiest Guy', cursive;
+    color: #222 !important;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.panel-title a {
+    font-size: 18px;
+    color: #7b7b7b;
+}
+
+.panel-heading i {
+    margin-top: -25px;
+    color: #e2dfdf;
+}
+
+.panel-body {
+    padding-bottom: 2.66rem;
+}
+
+.store .category_text {
+    display: block;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.1em;
+    clear: both;
+    font-family: 'Lilita One', cursive !important;
+}
+
+.store .category_title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.1em;
+    clear: both;
+    font-family: 'Lilita One' !important;
+    color: #000;
+}
+
+</style>
