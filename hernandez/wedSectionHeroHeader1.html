@@ -1,0 +1,233 @@
+<!--
+
+    Section: Hero Header 1
+
+    Option_count: 1
+
+-->
+
+<style type="text/css">
+
+  .prm-hero {
+  
+    height: auto;
+  
+    display: flex;
+  
+    align-content: center;
+  
+    position: relative;
+  
+  }
+  
+  /*Introduce height and width within this particular decleration 
+  keep width at 100 to adjust for monitor size */
+  
+  .prm-hero .prm-hero-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: auto;
+      width: 100%;
+      content: "";
+  }
+  
+  
+  
+  .prm-hero .prm-hero-info .prm-hero-info-wrapper [class*=prm-hero-line] {
+  
+    display: block;
+  
+  }
+  
+  
+  
+  .prm-hero .prm-hero-info {
+  
+    display: block;
+  
+    position: relative;
+  
+    z-index: 2;
+  
+  }
+  
+  
+  
+  .prm-hero .prm-hero-info {
+  
+    max-width: 100%;
+  
+    width: 100%;
+  
+    padding: 9em 4% 3em;
+  
+  }
+  
+  
+  
+  .prm-hero .prm-hero-info .prm-hero-info-wrapper {
+  
+    font-size: 2.8em;
+  
+    line-height: 1.125;
+  
+    font-weight: 600;
+  
+  }
+  
+  
+  
+  .prm-hero .prm-hero-info > * {
+  
+    color: #fff;
+  
+  }
+  
+  
+  
+  .prm-hero .prm-hero-info .prm-hero-line-3 {
+  
+    font-size: 0.431em;
+  
+    margin: 0.1em 0 1.3em;
+  
+  }
+  
+  
+  
+  .prm-hero .prm-hero-image-1 {
+  
+    position: absolute;
+  
+    right: 0;
+  
+    bottom: 0;
+  
+    width: 100%;
+  
+    height: auto;
+  
+    top: 50%;
+  
+    transform: translate(-10%, -50%);
+  
+    max-width: 55em;
+  
+  }
+  
+  
+  
+  @media (max-width: 1200px) {
+  
+    .prm-hero {
+  
+      height: 35em;
+  
+    }
+  
+  
+  
+  .prm-hero .prm-hero-image-1 {
+  
+      width: 40em;
+  
+    }
+  
+  }
+  
+  @media (max-width: 896px) {
+  
+    .prm-hero {
+  
+      z-index: 0;
+  
+    }
+  
+  
+  
+    .prm-hero:after {
+  
+      position: absolute;
+  
+      top: 0;
+  
+      bottom: 0;
+  
+      left: 0;
+  
+      right: 0;
+  
+      content: "";
+  
+      background-color: rgba(0, 0, 0, 0.6);
+  
+    }
+  
+  
+  
+  .prm-hero .prm-hero-image-1 {
+  
+      width: 40em;
+  
+      z-index: 0;
+  
+    }
+  
+  }
+  
+  @media (max-width: 767px) {
+  
+  .prm-hero .prm-hero-image-1 {
+  
+      display: none;
+  
+    }
+  
+    
+  
+    .prm-hero {
+  
+      height: auto;
+  
+    }
+  
+  
+  
+  .prm-hero .prm-hero-info {
+  
+      padding: 6em 0%;
+  
+      text-align: center;
+  
+    }
+  
+  }
+  
+  </style>
+  
+  <section class="prm-hero">
+      <div class="prm-hero-background" eclick='rb1' [image:rb1?m=background&d=//files.sysers.com/cp/upload/dt1/gallery//full/hero-placeholder-bg.jpg&s=background: transparent url(IMGURL) top center / cover no-repeat;]></div>
+   
+    <div class="container">
+  
+      <div class="prm-hero-info">
+  
+        <div class="prm-hero-info-wrapper">
+  
+          <span class="prm-hero-line-1" eclick='rbl1'>[text:rbl1?d=Lorem Ipsum]</span>
+  
+          <span class="prm-hero-line-2" eclick='rbl2'>[text:rbl2?t=text&d=Dolor Sitan]</span>
+  
+          <span class="prm-hero-line-3" eclick='rbl3'>[text:rbl3?d=Free Delivery]</span>
+  
+        </div>
+  
+        <a class="btn btn-primary" eclick='rbb1' href="/order-by-date/?show_instructions=1">[text:rbb1?t=link&d=Book Online Now&a=]</a>
+  
+      </div>
+    </div>
+  
+  </section>

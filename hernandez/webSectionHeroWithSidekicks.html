@@ -1,0 +1,912 @@
+<!--
+
+    Section: BLG Hero With Sidekicks 
+
+    Option_Count: 2
+
+-->
+
+
+
+<style type="text/css">
+
+  /*<option1>*/
+  
+      .hero-split-column {
+  
+        background-size: cover;
+  
+        color: #fff;
+  
+        text-align: center;
+  
+        height: 400px;
+  
+      }
+  
+      .hero-split-column .overlay-img {
+  
+          height: 100%;
+  
+      }
+  
+      
+  
+      .hero-split-column .container {
+  
+        display: flex;
+  
+        justify-content: center;
+  
+        align-items: center;
+  
+        height: 100%;
+  
+        
+  
+      }
+  
+      
+  
+      .hero-split-column .hero-split-column-img {
+  
+        max-width: 100%;
+  
+      }
+  
+      
+  
+      .hero-split-column-title-btn {
+  
+        margin-top: 15px;
+  
+        background-color: #CF0000;
+  
+        border: 0;
+  
+      }
+  
+      
+  
+      .hero-split-column-subtitle {
+  
+        display: block;
+  
+        font-size: 2em;
+  
+      }
+  
+      
+  
+      .hero-split-column-title {
+  
+        display: block;
+  
+        font-weight: bold;
+  
+        font-size: 3em;
+  
+      }
+  
+      
+  
+      .hero-split-column .row {
+  
+        display: flex;
+  
+        justify-content: center;
+  
+        align-items: normal;
+  
+      }
+  
+      
+  
+      @media (max-width: 767px) {
+  
+        .hero-split-column .row {
+  
+          flex-flow: column;
+  
+        }
+  
+        .hero-split-column .hero-split-column-img {
+  
+          max-width: 60%;
+  
+        }
+  
+      }
+  
+      @media (max-width: 414px) {
+  
+        .hero-split-column {
+  
+        height: auto !important;
+  
+        margin-bottom: 25px;
+  
+      }
+  
+      .overlay-img {
+  
+          padding-bottom: 30px !important;
+  
+      }
+  
+      .hero-split-column {
+  
+          height: auto !important;
+  
+      }
+  
+      .hero-split-column .overlay-img {
+  
+          padding-top: 20px;
+  
+          height: 100%;
+  
+      }
+  
+      }
+  
+      @media (min-width: 415px){
+  
+      .mobile-ban {
+  
+        display: none;
+  
+      } 
+  
+    }
+  
+  
+  
+      .prm-section{
+  
+      background-color: #fff;
+  
+      }
+  
+      .prm-midway-widgets-3 .prm-midway-widgets-3-item {
+  
+          background-color: #fff;
+  
+          padding: 20px 20px;
+  
+          margin-top: -45px;
+  
+          margin-bottom: 15px;
+  
+          position: relative;
+  
+          font-size: 34px;
+  
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  
+          z-index: 100;
+  
+      }
+  
+  
+  
+      .prm-midway-widgets-3-item .fa {
+  
+          font-size: 50px;
+  
+          color: [setting:blg_color_icons_font]
+  
+      }
+  
+  
+  
+      .prm-midway-widgets-3-item .media-body {
+  
+          font-weight: bold;
+  
+          line-height: 24px;
+  
+          font-size: 24px;
+  
+          width: initial;
+  
+      }
+  
+  
+  
+      .prm-midway-widgets-3-item .midway-widget {
+  
+          display: flex;
+  
+          justify-content: center;
+  
+          border-right: 1px solid rgba(0, 0, 0, 0.1);
+  
+      }
+  
+  
+  
+      .prm-midway-widgets-3-item [class*=col-md]:last-child .midway-widget {
+  
+          border-right: none;
+  
+      }
+  
+  
+  
+      .prm-midway-widgets-3-item [class*=col-md]:last-child .media-body {
+  
+          border: none;
+  
+      }
+  
+  
+  
+      .prm-midway-widgets-3-item .midway-widget-heading,
+  
+      .prm-midway-widgets-3-item .midway-widget-subheading {
+  
+          display: block;
+  
+          white-space: nowrap;
+  
+      }
+  
+  
+  
+      .prm-midway-widgets-3-item .midway-widget-subheading a {
+  
+          color: #565656;
+  
+      }
+  
+  
+  
+      .prm-midway-widgets-3-item .midway-widget-heading a {
+  
+          color: [setting:blg_color_global_link]
+  
+      }
+  
+  
+  
+      .prm-midway-widgets-3-item a:hover {
+  
+          color: [setting:blg_color_global_link_hover] !important;
+  
+      }
+  
+  
+  
+      @media (max-width: 991px) {
+  
+          .prm-midway-widgets-3 {
+  
+              display: none;
+  
+          }
+  
+      }
+  
+  
+  
+  /*</option1>*/
+  
+  </style>
+  
+  
+  
+  <option1>
+  
+  <div [image:if1?m=srclink&d=blue_bubbles.jpg] class="hero-split-column">
+  
+    <div class="overlay-img">
+  
+    <div class="container">
+  
+      <div class="row">
+  
+        <div class="col-md-5">
+  
+            
+  
+            <img [image:if1?m=srclink&d=download2.jpg] class="hero-split-column-img desktop-ban">
+  
+  
+  
+  
+  
+            [general_image:logo?max-height=80px&;max-width=360px&class=hero-split-column-img mobile-ban]
+  
+            
+  
+        </div>
+  
+        <div class="col-md-7">
+  
+            
+  
+            <h1 class="hero-split-column-title" eclick='f-t1-1'>[text:f-t1-1?d=Feature Title Text]</h1>
+  
+  
+  
+            
+  
+            <h2 class="hero-split-column-subtitle" eclick='f-t2-1'>[text:f-t1-1?d=Feature Title Text]</h2>
+  
+  
+  
+            
+  
+            <a eclick='f-btn1' href="/order-by-date/" class="hero-split-column-title-btn btn btn-lg btn-primary">[text:f-btn1?t=link&d=Book Online Now]</a>
+  
+        </div>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+  
+  </div>
+  
+  
+  
+  <div class="prm-section prm-midway-widgets-3">
+  
+      <div class="container">
+  
+          <div class="prm-midway-widgets-3-item padding-sm container">
+  
+              <div class="row">
+  
+                  <div class="col-md-4">
+  
+                      <div class="media midway-widget">
+  
+                          <div class="media-left">
+  
+                              <i class="fa fa-phone fa-flip-horizontal" aria-hidden="true"></i>
+  
+                          </div>
+  
+                          <div class="media-body">
+  
+                              <span class="midway-widget-heading">
+  
+                                  <a onclick="open_section_text_editor('n475at_0_textid-mwh-1','400','300','12','#555555','','link','','', event); return !!false;" id="n475at_0_textid-mwh-1" data-id="n475at_0_textid-mwh-1" href="tel:[setting:Company Phone]">Call Us</a>
+  
+                              </span>
+  
+                              <span class="midway-widget-subheading">
+  <n ewline>                                <a onclick="open_section_text_editor('n475at_0_textid-mwsh-1','400','300','12','#555555','','link','','', event); return !!false;" id="n475at_0_textid-mwsh-1" data-id="n475at_0_textid-mwsh-1" href="tel:[setting:Company Phone]">[setting:Company Phone]</a>
+  
+                              </span>
+  
+                          </div>
+  
+                      </div>
+  
+                  </div>
+  
+                  <div class="col-md-4">
+  
+                      <div class="media midway-widget">
+  
+                          <div class="media-left">
+  
+                              <i class="fa fa-mobile" aria-hidden="true"></i>
+  
+                          </div>
+  
+                          <div class="media-body">
+  
+                              <span class="midway-widget-heading">
+  
+                                  <a onclick="open_section_text_editor('n475at_0_textid-mwh-2','400','300','12','#555555','','link','','', event); return !!false;" id="n475at_0_textid-mwh-2" data-id="n475at_0_textid-mwh-2" href="sms:[setting:Company Phone]">Text Us When Finished</a>
+  
+                              </span>
+  
+                              <span class="midway-widget-subheading">
+  
+                                  <a onclick="open_section_text_editor('n475at_0_textid-mwsh-2','400','300','12','#555555','','link','','', event); return !!false;" id="n475at_0_textid-mwsh-2" data-id="n475at_0_textid-mwsh-2" href="sms:[setting:Company Phone]">And We'll Pick It Up</a>
+  
+                              </span>
+  
+                          </div>
+  
+                      </div>
+  
+                  </div>
+  
+                  <div class="col-md-4">
+  
+                      <div class="media midway-widget">
+  
+                          <div class="media-left">
+  
+                              <i class="fa fa-truck fa-flip" aria-hidden="true"></i>
+  
+                          </div>
+  
+                          <div class="media-body">
+  
+                              <span class="midway-widget-heading">
+  
+                                  <a onclick="open_section_text_editor('n475at_0_textid-mwh-3','400','300','12','#555555','','link','','', event); return !!false;" id="n475at_0_textid-mwh-3" data-id="n475at_0_textid-mwh-3" href="/">Same Day Delivery</a>
+  
+                              </span>
+  
+                              <span class="midway-widget-subheading">
+  
+                                  <a onclick="open_section_text_editor('n475at_0_textid-mwsh-3','400','300','12','#555555','','link','','', event); return !!false;" id="n475at_0_textid-mwsh-3" data-id="n475at_0_textid-mwsh-3" href="/">Always On Time</a>
+  
+                              </span>
+  
+                          </div>
+  
+                      </div>
+  
+                  </div>
+  
+              </div>
+  
+          </div>
+  
+      </div>
+  
+  </div>
+  
+  </option1>
+  
+  
+  
+  <style type="text/css">
+  
+  /*<option2>*/
+  
+      .hero-split-column {
+  
+        background-size: cover;
+  
+        color: #fff;
+  
+        text-align: center;
+  
+        height: 400px;
+  
+      }
+  
+      .hero-split-column .overlay-img {
+  
+         height: 100%;
+  
+      }
+  
+      
+  
+      .hero-split-column .container {
+  
+        display: flex;
+  
+        justify-content: center;
+  
+        align-items: center;
+  
+        height: 100%;
+  
+        margin-top: 5%;
+  
+      }
+  
+      
+  
+      .hero-split-column .hero-split-column-img {
+  
+        max-width: 100%;
+  
+      }
+  
+      
+  
+      .hero-split-column-title-btn {
+  
+        margin-top: 15px;
+  
+        background-color: #CF0000;
+  
+        border: 0;
+  
+      }
+  
+      
+  
+      .hero-split-column-subtitle {
+  
+        display: block;
+  
+        font-size: 2em;
+  
+      }
+  
+      
+  
+      .hero-split-column-title {
+  
+        display: block;
+  
+        font-weight: bold;
+  
+        font-size: 3em;
+  
+      }
+  
+      
+  
+      .hero-split-column .row {
+  
+        display: flex;
+  
+        flex-wrap: wrap;
+  
+        justify-content: center;
+  
+        align-items: normal;
+  
+      }
+  
+      
+  
+      @media (max-width: 767px) {
+  
+        .hero-split-column .row {
+  
+          flex-flow: column;
+  
+        }
+  
+        .hero-split-column .hero-split-column-img {
+  
+          max-width: 60%;
+  
+        }
+  
+      }
+  
+      @media (max-width: 414px) {
+  
+        .hero-split-column {
+  
+        height: auto !important;
+  
+        margin-bottom: 25px;
+  
+      }
+  
+      .overlay-img {
+  
+          padding-bottom: 30px !important;
+  
+      }
+  
+      .hero-split-column {
+  
+          height: auto !important;
+  
+      }
+  
+      .hero-split-column .overlay-img {
+  
+          padding-top: 20px;
+  
+          height: 100%;
+  
+      }
+  
+      }
+  
+      @media (min-width: 415px){
+  
+      .mobile-ban {
+  
+        display: none;
+  
+      } 
+  
+    }
+  
+  
+  
+      .prm-section{
+  
+      background-color: #fff;
+  
+      }
+  
+      .prm-midway-widgets-3 .prm-midway-widgets-3-item {
+  
+          background-color: #fff;
+  
+          padding: 20px 20px;
+  
+          margin-top: -45px;
+  
+          margin-bottom: 15px;
+  
+          position: relative;
+  
+          font-size: 34px;
+  
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  
+          z-index: 100;
+  
+      }
+  
+  
+  
+      .prm-midway-widgets-3-item .fa {
+  
+          font-size: 50px;
+  
+          color: [setting:blg_color_icons_font]
+  
+      }
+  
+  
+  
+      .prm-midway-widgets-3-item .media-body {
+  
+          font-weight: bold;
+  
+          line-height: 24px;
+  
+          font-size: 24px;
+  
+          width: initial;
+  
+      }
+  
+  
+  
+      .prm-midway-widgets-3-item .midway-widget {
+  
+          display: flex;
+  
+          justify-content: center;
+  
+          border-right: 1px solid rgba(0, 0, 0, 0.1);
+  
+      }
+  
+  
+  
+      .prm-midway-widgets-3-item [class*=col-md]:last-child .midway-widget {
+  
+          border-right: none;
+  
+      }
+  
+  
+  
+      .prm-midway-widgets-3-item [class*=col-md]:last-child .media-body {
+  
+          border: none;
+  
+      }
+  
+  
+  
+      .prm-midway-widgets-3-item .midway-widget-heading,
+  
+      .prm-midway-widgets-3-item .midway-widget-subheading {
+  
+          display: block;
+  
+          white-space: nowrap;
+  
+      }
+  
+  
+  
+      .prm-midway-widgets-3-item .midway-widget-subheading a {
+  
+          color: #565656;
+  
+      }
+  
+  
+  
+      .prm-midway-widgets-3-item .midway-widget-heading a {
+  
+          color: [setting:blg_color_global_link]
+  
+      }
+  
+  
+  
+      .prm-midway-widgets-3-item a:hover {
+  
+          color: [setting:blg_color_global_link_hover] !important;
+  
+      }
+  
+  
+  
+      @media (max-width: 991px) {
+  
+          .prm-midway-widgets-3 {
+  
+              display: none;
+  
+          }
+  
+      }
+  
+  
+  
+  /*</option2>*/
+  
+  </style>
+  
+  
+  
+  <option2>
+  
+  <div [image:if1?m=srclink&d=blue_bubbles.jpg] class="hero-split-column">
+  
+    <div class="overlay-img">
+  
+      <div class="row">
+  
+      <div class="col-md-6 mobile-ban">
+  
+        
+  
+      [general_image:logo?max-height=80px&;max-width=360px&;class=hero-split-column-img mobile-ban]
+  
+          
+  
+      </div>
+  
+    <div class="container">
+  
+  
+  
+        <div class="col-md-6">
+  
+            
+  
+            <h1 class="hero-split-column-title" eclick='f-t1-1'>[text:f-t1-1?d=Feature Title Text]</h1>
+  
+  
+  
+            
+  
+            <h2 class="hero-split-column-subtitle" eclick='f-t2-1'>[text:f-t2-1?d=Feature Title Text]</h2>
+  
+  
+  
+            
+  
+            <a eclick='f-btn1' href="/order-by-date/" class="hero-split-column-title-btn btn btn-lg btn-primary">[text:f-btn1?t=link&d=Book Online Now]</a>
+  
+        </div>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+  
+  </div>
+  
+  
+  
+  <div class="prm-section prm-midway-widgets-3">
+  
+      <div class="container">
+  
+          <div class="prm-midway-widgets-3-item padding-sm container">
+  
+              <div class="row">
+  
+                  <div class="col-md-4">
+  
+                      <div class="media midway-widget">
+  
+                          <div class="media-left">
+  
+                              <i class="fa fa-phone fa-flip-horizontal" aria-hidden="true"></i>
+  
+                          </div>
+  
+                          <div class="media-body">
+  
+                              <span class="midway-widget-heading">
+  
+                                  <a onclick="open_section_text_editor('n475at_0_textid-mwh-1','400','300','12','#555555','','link','','', event); return !!false;" id="n475at_0_textid-mwh-1" data-id="n475at_0_textid-mwh-1" href="tel:[setting:Company Phone]">Call Us</a>
+  
+                              </span>
+  
+                              <span class="midway-widget-subheading">
+  
+                                  <a onclick="open_section_text_editor('n475at_0_textid-mwsh-1','400','300','12','#555555','','link','','', event); return !!false;" id="n475at_0_textid-mwsh-1" data-id="n475at_0_textid-mwsh-1" href="tel:[setting:Company Phone]">[setting:Company Phone]</a>
+  
+                              </span>
+  
+                          </div>
+  
+                      </div>
+  
+                  </div>
+  
+                  <div class="col-md-4">
+  
+                      <div class="media midway-widget">
+  
+                          <div class="media-left">
+  
+                              <i class="fa fa-mobile" aria-hidden="true"></i>
+  
+                          </div>
+  
+                          <div class="media-body">
+  
+                              <span class="midway-widget-heading">
+  
+                                  <a onclick="open_section_text_editor('n475at_0_textid-mwh-2','400','300','12','#555555','','link','','', event); return !!false;" id="n475at_0_textid-mwh-2" data-id="n475at_0_textid-mwh-2" href="sms:[setting:Company Phone]">Text Us When Finished</a>
+  
+                              </span>
+  
+                              <span class="midway-widget-subheading">
+  
+                                  <a onclick="open_section_text_editor('n475at_0_textid-mwsh-2','400','300','12','#555555','','link','','', event); return !!false;" id="n475at_0_textid-mwsh-2" data-id="n475at_0_textid-mwsh-2" href="sms:[setting:Company Phone]">And We'll Pick It Up</a>
+  
+                              </span>
+  
+                          </div>
+  
+                      </div>
+  
+                  </div>
+  
+                  <div class="col-md-4">
+  
+                      <div class="media midway-widget">
+  
+                          <div class="media-left">
+  
+                              <i class="fa fa-truck fa-flip" aria-hidden="true"></i>
+  
+                          </div>
+  
+                          <div class="media-body">
+  
+                              <span class="midway-widget-heading">
+  
+                                  <a onclick="open_section_text_editor('n475at_0_textid-mwh-3','400','300','12','#555555','','link','','', event); return !!false;" id="n475at_0_textid-mwh-3" data-id="n475at_0_textid-mwh-3" href="/">Same Day Delivery</a>
+  
+                              </span>
+  
+                              <span class="midway-widget-subheading">
+  
+                                  <a onclick="open_section_text_editor('n475at_0_textid-mwsh-3','400','300','12','#555555','','link','','', event); return !!false;" id="n475at_0_textid-mwsh-3" data-id="n475at_0_textid-mwsh-3" href="/">Always On Time</a>
+  
+                              </span>
+  
+                          </div>
+  
+                      </div>
+  
+                  </div>
+  
+              </div>
+  
+          </div>
+  
+      </div>
+  
+  </div>
+  
+  </option2>
