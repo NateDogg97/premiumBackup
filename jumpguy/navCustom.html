@@ -1,0 +1,269 @@
+<!--
+	Section: NavCustom
+	Option_Count: 1
+-->
+<style type="text/css">
+  #prm-header{background:#1D4A8D;padding:10px;margin:0;border:none;border-radius:0;box-shadow:0px 2px 5px rgba(0,0,0,0.5);display:-ms-flexbox;display:flex;-ms-flex-flow:row wrap;flex-flow:row wrap;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}#prm-header a,#prm-header a:hover,#prm-header a:active,#prm-header a:visited{text-decoration:none}#prm-header .widget-left{width:30%;display:-ms-flexbox;display:flex}#prm-header .widget-center{width:50%}#prm-header .widget-right{width:20%;text-align:right}#prm-header a.logo{padding:0;margin:0;height:auto}#prm-header a.logo img{max-height:100%;max-width:100%;margin:0}#prm-header .navbar-toggle{display:initial;max-height:50px}#prm-header .navbar-toggle:focus,#prm-header .navbar-toggle:hover{background-color:#EC2127;border-color:#EC2127}#prm-header .navbar-toggle .icon-bar{background:#fff}#prm-header a.phone{color:#fff;font-size:22px;font-weight:500}#prm-header .prm-navbar{width:100%}#prm-header .prm-navbar .navbar-nav>li>a{color:#fff}#prm-header .navbar-right{margin:0}.prm-search{position:relative}.prm-search .input-group-btn .btn{margin-top:0;margin-right:0;font-size:18px;outline:none}.prm-search .input-group-btn .btn span{display:inline-block;margin:0 0 0 5px}.prm-search .input-group .fa-search{font-size:1.2em}.prm-search .fa.fa-b{font-weight:500}.prm-search .input-group .input-group-btn.categories .btn{background:#f4f4f4;border-right:1px solid #ccc;color:#555555 !important}.prm-search .btn-primary.submit{background:#EC2127;color:#fff;outline:none}.prm-search .input-group .input-group-btn .btn,.prm-search input[type="text"].form-control{height:40px;border:none}.prm-search input[type="text"].form-control:focus{outline:none;box-shadow:none;border:none}.prm-search .ui-menu{position:absolute;list-style:none;padding:0;overflow:hidden;box-shadow:5px 5px 5px rgba(0,0,0,0.2)}.prm-search .ui-autocomplete{max-height:900px;overflow-y:scroll;z-index:99}.prm-search .ui-autocomplete li{text-align:left}.prm-search .product{display:-ms-flexbox;display:flex;-ms-flex-flow:row wrap;flex-flow:row wrap;font-size:12px}.prm-search .product .product-image{width:20%}.prm-search .product .product-info{display:-ms-flexbox;display:flex;-ms-flex-flow:column wrap;flex-flow:column wrap;width:60%}.prm-search .product .product-price{width:20%}.prm-search .product .category:before{display:none}.prm-search .product .name{font-weight:600}.prm-search .product span.price{background:#1D4A8D;color:#fff;padding:4px 8px;text-align:center;border-radius:5px}.prm-search .product span.price:before{content:"$"}.prm-search .ui-menu .ui-menu-item{border-bottom:1px solid #ddd}.prm-search .ui-menu .ui-menu-item:nth-child(even){background:#f4f4f4}.prm-search .ui-menu .ui-menu-item:nth-child(odd){background:#fff}.prm-search .ui-menu .ui-menu-item:last-child{border-bottom:none}.prm-search .ui-menu .ui-menu-item a{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-line-pack:center;align-content:center;-ms-flex-pack:start;justify-content:flex-start;text-decoration:none;width:100%}.prm-search .ui-menu .ui-menu-item a:hover{background:#efefef}.prm-search .ui-menu .ui-menu-item img{margin:8px 16px 8px 8px;display:inline-block;max-width:50px;max-height:50px}.prm-search .categories ul.dropdown-menu{padding:0;max-height:900px;overflow-y:scroll;overflow-x:hidden}#sliding-categories ul{padding:0;list-style:none}#sliding-categories .category-item{overflow:hidden;white-space:nowrap}.prm-search .categories li,#sliding-categories li{border-bottom:1px solid #eee;text-align:left}.prm-search .categories li:last-child,#sliding-categories li:last-child{border-bottom:none}.prm-search .categories li:nth-child(odd),#sliding-categories li:nth-child(odd){background:#fff}.prm-search .categories li a,#sliding-categories li a{display:block}.prm-search .categories li a img,#sliding-categories li a img{margin-right:10px;max-width:50px;max-height:50px}.ui-helper-hidden-accessible{visibility:hidden}#sliding-categories{position:fixed;top:0;left:0;height:100% !important;width:300px;z-index:10000;background:#fff;padding:10px;white-space:nowrap;-webkit-transform:translate3d(-101%, 0, 0);transform:translate3d(-101%, 0, 0);transition:all 0.6s ease;display:block;box-shadow:2px 0 5px rgba(0,0,0,0.5)}#sliding-categories.active{-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);overflow-y:scroll}.close-icon{position:fixed;top:5px;left:305px;width:25px;height:25px;background:#000;border-radius:50%;color:#fff;display:none;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center;z-index:10000;transition:all 2s ease-in-out;cursor:pointer}.close-icon.active{display:-ms-flexbox;display:flex}.close-icon:after{font-family:FontAwesome;content:"\f00d"}#search_box{display:none}@media (min-width: 768px) and (max-width: 1069px){#prm-header a.phone{font-size:19px}}@media (max-width: 767px){.input-group-btn.categories{display:none}.prm-search .input-group input[type="text"].form-control{border-radius:5px 0 0 5px}#prm-header .widget{margin:10px 0}#prm-header .widget-left{width:100%;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-order:0;order:0}#prm-header .widget-left .navbar-toggle{-ms-flex-order:1;order:1}#prm-header .widget-left .logo{-ms-flex-order:0;order:0}#prm-header .widget-center{-ms-flex-order:1;order:1;width:100%}#prm-header .widget-right{-ms-flex-order:3;order:3;width:100%;text-align:center}#prm-header .prm-navbar{-ms-flex-order:2;order:2;text-align:center}#prm-header .navbar-slider{display:-ms-flexbox;display:flex;overflow-x:auto;overflow-y:hidden;height:60px;-ms-flex-align:center;align-items:center}#prm-header .navbar-slider li>a{white-space:nowrap}}@media (max-width: 400px){.prm-search .product .product-image{width:auto}.prm-search .product .product-price{display:none}}@media (max-width: 300px){.prm-search .product .product-image,.prm-search .product .product-info{width:100%;-ms-flex-align:center;align-items:center;text-align:center}}
+ 
+ /*Nav Button*/
+ 
+ 
+ 
+ button.navbar-toggle {
+   -webkit-transition: color .4s;
+   -o-transition: color .4s;
+   transition: color .4s;
+     -webkit-animation: color_change 1s infinite !important;
+   -o-animation: color_change 1s infinite !important;
+   animation: color_change 1s infinite !important;
+   text-align: center;
+ }  
+ 
+ @-webkit-keyframes color_change {
+   0% { color: #da6e16; background-color:  #da6e16; }
+   25% { color: #82da16; background-color:  #82da16; }
+   50% { color: #16dad0; background-color:  #16dad0; }
+   75% { color: #d41a82; background-color:  #d41a82; }
+   100% { color: #d41a82; background-color: #d41a82; }
+ }
+ @-moz-keyframes color_change {
+   0% { color: #da6e16; background-color:  #da6e16; }
+   25% { color: #82da16; background-color:  #82da16; }
+   50% { color: #16dad0; background-color:  #16dad0; }
+   75% { color: #d41a82; background-color:  #d41a82; }
+   100% { color: #d41a82; background-color: #d41a82; }
+ }
+ @-ms-keyframes color_change {
+   0% { color: #da6e16; background-color:  #da6e16; }
+   25% { color: #82da16; background-color:  #82da16; }
+   50% { color: #16dad0; background-color:  #16dad0; }
+   75% { color: #d41a82; background-color:  #d41a82; }
+   100% { color: #d41a82; background-color: #d41a82; }
+ }
+ @-o-keyframes color_change {
+   0% { color: #da6e16; background-color:  #da6e16; }
+   25% { color: #82da16; background-color:  #82da16; }
+   50% { color: #16dad0; background-color:  #16dad0; }
+   75% { color: #d41a82; background-color:  #d41a82; }
+   100% { color: #d41a82; background-color: #d41a82; }
+ }
+ @keyframes color_change {
+   0% { color: #da6e16; background-color:  #da6e16; }
+   25% { color: #82da16; background-color:  #82da16; }
+   50% { color: #16dad0; background-color:  #16dad0; }
+   75% { color: #d41a82; background-color:  #d41a82; }
+   100% { color: #d41a82; background-color: #d41a82; }
+ }
+ 
+ </style>
+ <script type="text/javascript">
+  $(function () {
+   let searchBar = {
+     init: function (products, categories) {
+       this.$searchBar = $('.prm-search');
+       this.initAutoComplete(products, categories);
+       this.initCategoryDropdown(categories);
+     },
+     initAutoComplete: function (products, categories) {
+       let updatedProducts = products.map(function (product) {
+         product.category = utils.filterProductCategory(product, categories);
+         product.picture = product.picture || ersDefaultImage;
+         product.label = product.name + "-" + product.category.name;
+         return {
+           value: product.id,
+           label: product.label,
+           full: product
+         };
+       });
+       let $searchInput = this.$searchBar.find(".form-control");
+       let $autoCompleteList = $('.ui-autocomplete');
+       $searchInput.autocomplete({
+         source: updatedProducts,
+         minLength: 2,
+         appendTo: this.$searchBar.selector,
+         open: function () {
+           $autoCompleteList.hide().fadeIn();
+         },
+         close: function (event) {
+           $autoCompleteList.show().fadeOut();
+         }
+       });
+       $searchInput.data($autoCompleteList.selector.slice(1))._renderItem = utils.renderProductItem;
+     },
+     initCategoryDropdown: function (categories) {
+       let $categoryMenu = this.$searchBar.find(".input-group-btn.categories");
+       let $ul = utils.renderCategoryMenu(categories);
+       $ul.addClass('dropdown-menu');
+       $ul.on('click', function () {
+         $ul.fadeToggle();
+       }).on('blur', function () {
+         $ul.fadeOut();
+       });
+       $ul.appendTo($categoryMenu);
+     }
+   };
+   let slidingCategoryMenu = {
+     init: function (categories) {
+       let $menu = $("#sliding-categories");
+       let $toggleButton = $('[data-toggle="sliding-categories"]');
+       let $closeButton = $(".close-icon");
+       let $ul = utils.renderCategoryMenu(categories);
+       $ul.appendTo($menu);
+       $toggleButton.click(function () {
+         let $this = $(this);
+         let $menu = $($this.data("target"));
+         $menu.toggleClass("active");
+         $closeButton.toggleClass("active");
+         $this.toggleClass("active");
+       });
+       $closeButton.click(function () {
+         let $this = $(this);
+         let $menu = $($this.data("target"));
+         $menu.removeClass("active");
+         $toggleButton.removeClass("active");
+         $this.removeClass("active");
+       });
+       $(document).click(function (e) {
+         let target = e.target;
+ 
+         if ($menu.hasClass("active") && !$toggleButton.is(target)) {
+           $menu.removeClass('active');
+           $closeButton.removeClass('active');
+         }
+       });
+     }
+   };
+   let utils = {
+     renderCategoryMenu: function (categories) {
+       let $ul = $('<ul>');
+       categories.forEach(function (item, index) {
+         if (item.display === true || item.display === 'web_only') {
+           $ul = utils.renderCategoryItem($ul, item);
+         }
+       });
+       return $ul;
+     },
+     renderCategoryItem: function ($ul, item) {
+       item.picture = item.picture || ersDefaultImage;
+       let $item = $(`
+         <li>
+           <a class="category-item" href="${item.url}">
+             <img src="${item.picture}" alt="${item.name}" />
+             <span>${item.name}</span>
+           </a>
+         </li>
+       `);
+       $item.appendTo($ul);
+       return $ul;
+     },
+     renderProductItem: function (ul, item) {
+       let $product = $(`
+         <a class="product" href="${item.full.url}">
+             <div class="product-info">
+                 <span class="name">${item.full.name}</span>
+                 <span class="category">${item.full.category.name}</span>
+               </div>
+               <div class="product-price">
+                 <span class="price">${item.full.baseCost}</span>
+               </div>
+             </div>
+         </a>
+       `);
+       let $li = $('<li>');
+       let $productImage = $(`<div class="product-image"></div>`);
+       let $img = $(`<img src="${item.full.picture}" alt="${item.full.name}"/>`);
+       $img.appendTo($productImage);
+       $productImage.prependTo($product);
+       $product.appendTo($li);
+       $li.attr("data-value", item.value);
+       return $li.appendTo(ul);
+     },
+     filterProductCategory: function (product, categories) {
+       if (!Array.isArray(product.categoryIds)) {
+         throw new TypeError("product.categoryIds expected to be an array");
+       }
+ 
+       let categoryId = product.categoryIds.shift();
+       return categories.filter(category => {
+         return category.id === categoryId;
+       }).shift();
+     }
+   };
+ 
+   let justifyNavbarSlider = function () {
+     let $navbarSlider = $(".navbar-slider");
+ 
+     (function ($) {
+       $.fn.hasScrollBar = function () {
+         var e = this.get(0);
+         return {
+           vertical: e.scrollHeight > e.clientHeight,
+           horizontal: e.scrollWidth > e.clientWidth
+         };
+       };
+     })($);
+ 
+     if (!$navbarSlider.hasScrollBar().horizontal) {
+       $navbarSlider.css("justify-content", "center");
+     } else {
+       $navbarSlider.css("justify-content", "initial");
+     }
+   };
+ 
+   let handleErrors = function (response) {
+     if (!(response.status === 200)) {
+       throw new Error(`${response.status} Error: ${response.message}`);
+     }
+   };
+ 
+   let handleResponse = function (response) {
+     handleErrors(response);
+     let categories = response.data.categories;
+     let products = response.data.products;
+     searchBar.init(products, categories);
+     slidingCategoryMenu.init(categories);
+   };
+ 
+   justifyNavbarSlider();
+   $(window).resize(justifyNavbarSlider);
+   let endpoint = `https://api.partyrental.marketing/v1/installs/${folderName}/products`;
+   $.getJSON(endpoint, handleResponse);
+ });
+ </script>
+ <nav class="navbar navbar-default" id="prm-header">
+   <div class="widget widget-left">
+     <button class="navbar-toggle" type="button" data-toggle="sliding-categories" data-target="#sliding-categories"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="logo navbar-brand" href="/">[general_image:Logo?&max-height=&class=]</a>
+   </div>
+   <div class="widget widget-center">
+     <div class="prm-search">
+       <div class="autocomplete-wrapper">
+         <div class="input-group">
+           <div class="input-group-btn categories">
+             <button class="btn btn-primary dropdown-toggle" type="button" id="navbar-collapse" data-toggle="dropdown">All<span class="caret"></span></button>
+           </div>
+           <input class="form-control" id="search_items" type="text" placeholder="Search rentals..." name="search_items"/>
+           <div class="input-group-btn">
+             <button class="btn btn-primary submit" type="button" onclick="window.location = '/category/?item_search=' + document.getElementById('search_items').value;"><i class="fa fa-b fa-search"></i></button>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="widget widget-right"><a class="phone" href="tel:[setting:Company Phone]">[setting:Company Phone]</a>
+   </div>
+   <div class="prm-navbar">
+     <ul class="nav navbar-nav navbar-slider navbar-right">
+       <li><a href="/">Home</a></li>
+       <li><a href="#" data-toggle="sliding-categories" data-target="#sliding-categories">All Rentals</a></li>
+       <li><a href="/category/giftcards/">Gift Cards</a></li>
+       <li><a href="/delivery-area/">Delivery Areas</a></li>
+       <li><a href="/frequently_asked_questions/">FAQ</a></li>
+        <li><a href="/employment/">Employment</a></li>
+       <li><a href="/contact_us/">Contact</a></li>
+       <li><a class="order-by-date" href="/order-by-date/" title="Order by Date"><i class="fa fa-b fa-calendar"></i></a></li>
+       <li><a class="cart" href="/cart/" title="Cart"><i class="fa fa-b fa-shopping-cart"></i></a></li>
+     </ul>
+   </div>
+   <div id="sliding-categories"></div>
+   <div class="close-icon" data-target="#sliding-categories"></div>
+ </nav>
