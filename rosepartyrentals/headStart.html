@@ -1,0 +1,21 @@
+<!-- Custom CSS -->
+<style type="text/css">
+  .hl_text-widget--btn {padding: 0;}
+  .hl_text-widget--btn .icon.widget-open-icon {background-color:#FFF;box-shadow:0 0 10px rgba(0,0,0,0.1);background-size: cover;border-radius: 50%;}
+  .hl_text-widget--btn .icon.widget-open-icon svg {width: 12px;height: 12px;background-color: #00CB18;position: absolute;border-radius: 50%;top: 0;right: 0;border: 2px solid #FFF;}
+  .hl_text-widget--btn .icon.widget-open-icon svg path {opacity: 0;}
+  .lpmbot-chat-bubble {border-radius: 16px 16px 0 16px;position: absolute;width: 288px;height: 100px;z-index: 1;bottom: calc(100% + 12px);right: 50%;background-color: #FFF;padding: 15px 30px 15px 15px;text-align: left;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24);display:none;}
+  .lpmbot-chat-bubble p {color: #1f1f1f;font-size: 15px;line-height: 1.3;font-weight: 400;display: inline-block;width: 100%;}
+  .lpmbot-chat-close {position: absolute;right: 0;top: 0;width: 35px;height: 35px;cursor:pointer;}
+  .lpmbot-chat-close:before, .lpmbot-chat-close:after {content: "";position: absolute;background-color: #555;}
+  .lpmbot-chat-close:before {width: 12px;height: 1px;transform: rotate(45deg);top: 0;right: 0;left: 0;margin: auto;bottom: 0;}
+  .lpmbot-chat-close:after {width: 12px;height: 1px;transform: rotate(-45deg);top: 0;right: 0;left: 0;margin: auto;bottom: 0;}
+  #hl_text-widget--btn.active .lpmbot-chat-bubble {display: none;}
+  .lpmbot-bubble-active .lpmbot-chat-bubble{display: block;}
+  .hl_text-widget--btn .icon.widget-open-icon:before {position: absolute;background-color: #0D46D6;font-size: 10px;font-weight: 500;line-height: 1;padding: 2px 0;border-radius: 20px;width: 56px;bottom: -8px;right: 0;text-align: center;left: 0;margin: auto; z-index: 1;}
+  .hl_text-widget--btn .icon.widget-open-icon:after {content: "";position: absolute;width:54px;height:54px;background-size:cover;border-radius:50%;}
+  /* Chat Text */
+  .hl_text-widget--btn .icon.widget-open-icon:before {content: "Let's Chat";}
+  /* Chat Image */
+  .hl_text-widget--btn .icon.widget-open-icon:after {background-image: url(https://widgets.leadconnectorhq.com/chat-widget/assets/defaultAvatar.png);}
+  </style>
